@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="box">
+      <audio id="song">
+        <source src="birthday.mp3" />
+      </audio>
+
+      <h1>Happy Birthday To you</h1>
+      <br />
+      <p>My Elder Sister 🥰🥰</p>
+      <pre style="color: rgb(0, 234, 255)">
+    You mean the world to me,
+    my Sister.I pray that the
+    <u>  Lord blesses your life</u>
+  with all that is good and beautiful.
+    <i> I pray that God helps you
+         fulfill all your
+     dreams and aspirations.</i>
+     Happy blessed birthday😘😘😘
+       
+<i id="i">You younger brother: Muzahid </i> 
+    </pre>
+
+      <canvas id="birthday"></canvas>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      window.addEventListener("click", () => {
+        document.getElementById("song").play();
+      });
+      const box = document.querySelector("#box");
+      alert("Please click in background");
+      console.log(song);
+
+      window.onload = function () {
+        setTimeout(function () {
+          box.style.transition = "1.5s";
+
+          box.style.bottom = "-70px";
+        }, 3000);
+      };
+    </script>
+  </body>
+</html>
